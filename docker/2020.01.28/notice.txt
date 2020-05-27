@@ -1,0 +1,7 @@
+# configuration file need to add the JSON-style sample of the message for getting from the MQTT broker
+jsonsample = "{\"1\":{\"command\":\"property.publish\",\"params\":{\"thingKey\":\"545420B443E8455335363335520C6E6B\",\"ts\":\"2020-01-05T20:31:00Z\",\"key\":\"ut\",\"value\":564}},\"2\":{\"command\":\"property.publish\",\"params\":{\"thingKey\":\"545420B443E8455335363335520C7777\",\"ts\":\"2020-01-06T21:31:00Z\",\"key\":\"ut\",\"value\":128}}}"
+
+Based on this sample information, the program will automatically parse and generate the relevant database table structure, and perform data insertion actions.
+The first level supports multiple data records, and the other subsets support multiple levels of nested information structures.
+The database field corresponds to the sample Key value and supports free addition.
+At the same time, the program can roughly determine the type of the data field.
