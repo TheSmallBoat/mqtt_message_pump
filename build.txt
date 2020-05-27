@@ -1,0 +1,9 @@
+build in mac osx catalina
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+go build -o "pump_plus_osx" -ldflags "-w"
+
+
+build for linux in mac osx
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+go clean
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o "pump_plus_linux"
